@@ -1,0 +1,21 @@
+.close-btn {
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	right: 2rem;
+	font-size: 6rem;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	transition: all 0.2s;
+	transform: scale(0.5);
+
+	&:hover {
+		color: #f2bb05;
+		transform: scale(1);
+	}
+	// Media queries
+	@media screen and (max-width: 1440px) {
+		right: 4rem;
+	}
+}

@@ -1,0 +1,119 @@
+// starter container
+.container {
+	padding: 2rem;
+	min-height: 100vh;
+}
+// Banner componet
+.banner {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	background-image: url('../../imgs/bg.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	align-items: stretch;
+	opacity: 0;
+	transition: all 1.5s;
+
+	h2 {
+		text-transform: uppercase;
+		cursor: default;
+		margin-bottom: 1rem;
+	}
+
+	img {
+		height: 30rem;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		margin: 2rem auto;
+		transform: scale(0.8);
+		transition: all 0.2s;
+	}
+	// Banner selections
+	&-game-info,
+	&-deck-builder {
+		display: flex;
+		max-width: 50rem;
+		margin-bottom: 2rem;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		opacity: 0.6;
+		transition: opacity 0.2s, transform 1s 0.5s;
+		transform: translateX(-200rem);
+	}
+	&-game-info:hover,
+	&-deck-builder:hover {
+		opacity: 1;
+
+		img {
+			transform: scale(1);
+		}
+		#card-front {
+			transform: rotateY(-180deg);
+		}
+		#card-back {
+			transform: rotateY(0);
+		}
+	}
+	.btn:link,
+	.btn:visited {
+		padding: 2rem;
+	}
+}
+// Card selection img
+#card-front {
+	position: relative;
+	border-radius: 0.5rem;
+}
+#card-back {
+	position: absolute;
+	top: 0;
+	left: 14.7rem;
+	border-radius: 0.5rem;
+	transform: rotateY(180deg);
+}
+
+// Media queries
+@media screen and (max-width: 1800px) {
+	.banner {
+		background-size: 150% 100%;
+		background-position: right;
+
+		.btn:link,
+		.btn:visited {
+			font-size: 3rem;
+		}
+	}
+}
+@media screen and (max-width: 800px) {
+	.banner {
+		align-items: center;
+		&-game-info,
+		&-deck-builder {
+			opacity: 1;
+		}
+	}
+	#card-front {
+		display: none;
+		opacity: 0;
+	}
+	#card-back {
+		left: 0rem;
+		position: relative;
+		transform: rotateY(0) scale(1);
+	}
+}
+@media screen and (max-width: 500px) {
+	.banner {
+		&-deck-builder {
+			img {
+				width: 20rem;
+			}
+		}
+	}
+	#card-back {
+		width: 18rem;
+	}
+}

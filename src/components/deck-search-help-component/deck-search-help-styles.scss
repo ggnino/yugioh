@@ -1,0 +1,92 @@
+.deck-search-help {
+	border-radius: 5px;
+	width: 45rem;
+	height: 25rem;
+	top: 3rem;
+	margin-right: 65rem;
+	position: absolute;
+	transition: opacity 0.5s 0.2s;
+	z-index: 13;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: linear-gradient(to right, darkmagenta, rgb(114, 0, 114));
+	cursor: default;
+
+	h3 {
+		margin-top: 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	p {
+		padding: 1.2rem;
+		margin-right: 1.5rem;
+		line-height: 2rem;
+		overflow-y: scroll;
+		scrollbar-color: plum rgb(114, 0, 114);
+		scrollbar-width: thin;
+		border-radius: 0.5rem;
+		text-align: justify;
+		&::-webkit-scrollbar {
+			width: 0.5rem;
+		}
+		&::-webkit-scrollbar-track {
+			background: transparent;
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: plum;
+			border-radius: 1rem;
+		}
+	}
+}
+// Left point for completing quote box
+.left-point {
+	width: 0;
+	height: 0;
+	border-left: 2rem solid transparent;
+	border-right: 2rem solid transparent;
+	border-top: 8rem solid rgb(114, 0, 114);
+	position: absolute;
+	top: 15rem;
+	left: 45rem;
+	transform: rotate(-60deg);
+	transition: opacity 0.5s 0.2s;
+	z-index: -1;
+}
+// Media queries
+@media screen and (max-width: 1060px) {
+	.deck-search-help {
+		margin-right: 49rem;
+
+		width: 36rem;
+
+		.left-point {
+			top: 7rem;
+			left: 36rem;
+		}
+	}
+}
+@media screen and (max-width: 820px) {
+	.deck-search-help {
+		margin-right: 43rem;
+		width: 30rem;
+		.left-point {
+			left: 29rem;
+		}
+	}
+}
+@media screen and (max-width: 695px) {
+	.deck-search-help {
+		margin-right: 3rem;
+		width: 28rem;
+		top: 20rem;
+		background-image: none;
+		background-color: #720072;
+		.left-point {
+			top: -4rem;
+			left: 19rem;
+			transform: rotate(124deg);
+		}
+	}
+}

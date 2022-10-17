@@ -1,0 +1,122 @@
+.advance-search {
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	align-items: center;
+
+	// Deck Search component
+	.deck-search-help {
+		background-image: linear-gradient(to right, rgb(104, 63, 2), rgb(54, 0, 0));
+		p {
+			scrollbar-color: rgb(104, 63, 2) rgb(54, 0, 0);
+
+			&::-webkit-scrollbar-thumb {
+				background-color: chocolate;
+			}
+		}
+	}
+	.left-point {
+		top: 5rem;
+		border-top: 8rem solid rgb(54, 0, 0);
+	}
+
+	div {
+		transition: all 0.2s;
+		text-align: center;
+	}
+
+	&-img {
+		margin-top: 2rem;
+		width: 20rem;
+		cursor: pointer;
+	}
+	h3 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+	// Radio Btns
+	input[type='radio'] {
+		opacity: 0;
+		margin-right: 0.5rem;
+
+		&:checked ~ .custom-radio {
+			background-color: navy;
+		}
+		&:checked ~ .custom-radio::after {
+			display: block;
+		}
+	}
+	label {
+		position: relative;
+		font-size: 2rem;
+		margin: 0 1rem;
+		transition: all 0.2s;
+	}
+
+	&-radio-btns {
+		position: relative;
+		margin-top: 2rem;
+		border-radius: 1rem;
+		margin-bottom: 2rem;
+	}
+	&-radio-options {
+		transition: all 0.2s;
+		margin-bottom: 1rem;
+		label {
+			margin: 0 0.5rem;
+		}
+	}
+	&-radio-container {
+		width: 100%;
+	}
+	.custom-radio {
+		position: absolute;
+		width: 1.5rem;
+		height: 1.5rem;
+		top: 0;
+		left: 0;
+		background-color: transparent;
+		border-radius: 50%;
+		border: 2px #f2bb05 solid;
+		cursor: pointer;
+		display: block;
+		margin-top: 0.5rem;
+		transition: all 0.2s;
+
+		&::after {
+			content: '';
+			width: 0.5rem;
+			height: 0.5rem;
+			position: absolute;
+			top: 0.3rem;
+			right: 0.3rem;
+			border-radius: 50%;
+			background-color: #f2bb05;
+			display: none;
+		}
+
+		&:hover {
+			background-color: #f2bb05;
+		}
+	}
+	// Media queries
+	@media screen and (max-width: 1320px) {
+		.deck-search-help {
+			background-image: none;
+			background-color: rgb(54, 0, 0);
+		}
+	}
+	@media screen and (max-width: 695px) {
+		.deck-search-help {
+			top: 20rem;
+			margin-right: 2rem;
+		}
+		.left-point {
+			top: -4rem;
+			left: 7rem;
+			transform: rotate(203deg);
+		}
+	}
+}

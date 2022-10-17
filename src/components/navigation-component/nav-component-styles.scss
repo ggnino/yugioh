@@ -1,0 +1,55 @@
+.nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: transparent;
+	z-index: 50;
+
+	img {
+		cursor: pointer;
+		display: block;
+		margin: 0 auto;
+		width: 10rem;
+		animation: wander 5s infinite linear;
+		&:hover {
+			animation: glow 1.5s infinite linear;
+		}
+	}
+}
+
+// Animations
+@keyframes glow {
+	0% {
+		filter: drop-shadow(0 0 4px rgb(224, 174, 58)) contrast(100%);
+	}
+	25% {
+		filter: drop-shadow(0 0 8px rgb(224, 174, 58)) contrast(150%);
+	}
+	50% {
+		filter: drop-shadow(0 0 10px rgb(224, 174, 58)) contrast(175%);
+	}
+	75% {
+		filter: drop-shadow(0 0 8px rgb(224, 174, 58)) contrast(150%);
+	}
+	100% {
+		filter: drop-shadow(0 0 4px rgb(224, 174, 58)) contrast(100%);
+	}
+}
+
+@keyframes wander {
+	0% {
+		transform: translateX(0) translateY(0);
+	}
+	25% {
+		transform: translateX(0.2rem) translateY(0.2rem);
+	}
+	50% {
+		transform: translateX(-0.4rem) translateY(0.4rem);
+	}
+	75% {
+		transform: translateX(-0.6rem) translateY(0.2rem);
+	}
+	100% {
+		transform: translateX(0) translateY(0);
+	}
+}

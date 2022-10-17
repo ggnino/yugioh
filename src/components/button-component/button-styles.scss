@@ -1,0 +1,44 @@
+.btn {
+	display: inline-block;
+	padding: 1.5rem;
+	margin: 2rem;
+	text-decoration: none;
+	color: ivory;
+	border-radius: 5rem;
+
+	&:link,
+	&:visited {
+		font-size: 3rem;
+		text-align: center;
+		transition: all 0.2s;
+		font-family: 'Balsamiq Sans', cursive;
+	}
+	&:link:hover,
+	&:visited:hover {
+		color: #f2bb05;
+		transform: translateY(-0.5rem);
+		box-shadow: 0 5px 5px;
+	}
+	&:link:active {
+		transform: translateY(0);
+		box-shadow: none;
+	}
+	// Banner btns
+	&-banner {
+		background-color: transparent;
+		border: 3px solid transparent;
+	}
+	// Media queries
+	@media screen and (max-width: 695px) {
+		&:link,
+		&:visited {
+			font-size: 2rem;
+		}
+	}
+	@media screen and (max-width: 420px) {
+		&:link,
+		&:visited {
+			font-size: 1.2rem;
+		}
+	}
+}

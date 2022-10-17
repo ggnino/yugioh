@@ -1,0 +1,65 @@
+.card {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: flex-end;
+	border-radius: 0.5rem;
+	// Card img
+	&:not(:last-child) {
+		margin-right: 0.5rem;
+	}
+
+	img {
+		width: 100%;
+		border-radius: 0.5rem;
+	}
+	// Card btns
+	&-btns {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 27%;
+		background-color: rgba(black, 0.9);
+		transition: all 0.5s;
+		opacity: 0;
+		visibility: hidden;
+		border-bottom-left-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+
+		& > .btn {
+			flex-grow: 1;
+			margin: 0.3rem;
+		}
+
+		& > .btn:hover {
+			color: lightskyblue;
+		}
+
+		& > .btn:last-child:hover {
+			color: rgb(0, 209, 0);
+		}
+	}
+	&:hover &-btns {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	#Delete:hover {
+		color: red;
+	}
+	// Media queries
+	@media screen and (max-width: 1440px) {
+		&-btns .btn:link {
+			font-size: 3rem;
+			margin: 0;
+			padding: 1rem;
+		}
+	}
+	@media screen and (max-width: 695px) {
+		&-btns .btn:link {
+			font-size: 2rem;
+		}
+	}
+}

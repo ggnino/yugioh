@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Balsamiq+Sans&family=Supermercado+One&display=swap');
+
+// Global settings
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; // setting rem
+	scroll-behavior: smooth;
+	overflow: auto;
+	scrollbar-width: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Rowdies', cursive;
+	font-weight: 700;
+	text-align: center;
+}
+label,
+p {
+	font-family: 'Balsamiq Sans', cursive;
+}
+
+span,
+a {
+	font-family: 'Supermercado One', cursive;
+}
+
+body {
+	font-size: 1.5rem;
+	color: ivory;
+	background-color: rgb(40, 66, 146);
+
+	&::-webkit-scrollbar {
+		width: 0;
+		transition: all 0.2s;
+		z-index: -1;
+	}
+	&::-webkit-scrollbar-track {
+		color: gold;
+		z-index: -1;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #f2bb0500;
+		border: none;
+		border-radius: 1rem;
+		z-index: -1;
+
+		&:hover {
+			background-color: #f2bb0500;
+		}
+	}
+}

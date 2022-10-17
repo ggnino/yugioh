@@ -1,0 +1,84 @@
+.deck-search {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2rem;
+	width: 100%;
+	&-img {
+		position: relative;
+		width: 20rem;
+		cursor: pointer;
+		// Deck search help mouth element
+		&-mouth {
+			top: 24.7rem;
+			margin-top: 0.5rem;
+			margin-left: 1rem;
+			width: 1.5rem;
+			height: 0.5rem;
+			background-color: black;
+			border-bottom-left-radius: 0.5rem;
+			border-bottom-right-radius: 0.5rem;
+			position: absolute;
+			transition: all 0.2s;
+			z-index: 12;
+		}
+	}
+	// Media query
+	@media screen and (max-width: 1060px) {
+		align-items: center;
+		&-img {
+			width: 12rem;
+			&-mouth {
+				top: 17rem;
+				width: 1rem;
+			}
+		}
+	}
+}
+// Animatiom mouth element
+.open-mouth {
+	animation: open-mouth 0.2s 1 linear;
+	animation-fill-mode: forwards;
+	transform: matrix(1, 0, 0, 0.005, 0, 0);
+}
+.close-mouth {
+	animation: close-mouth 0.2s 1 linear;
+	animation-fill-mode: forwards;
+	transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+// Animations
+@keyframes open-mouth {
+	0% {
+		animation-timing-function: cubic-bezier(0.1006, 0.3357, -0.2396, 0.6703);
+		transform: translate(0%, 0%) scale(1, 0.005);
+		opacity: 0;
+	}
+	2% {
+		animation-timing-function: cubic-bezier(0.2668, 0.6542, 0.5372, 0.8035);
+		transform: translate(0%, 0%) scale(1, 0.376);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(0%, 0%) scale(1, 1);
+		opacity: 1;
+	}
+}
+
+@keyframes close-mouth {
+	0% {
+		animation-timing-function: cubic-bezier(0.2221, 0.7433, 0.3066, 0.8148);
+		transform: translate(0%, 0%) scale(1, 1);
+		opacity: 1;
+	}
+	97% {
+		animation-timing-function: cubic-bezier(0.3286, 0.4108, 0.6714, 0.5892);
+		transform: translate(0%, 0%) scale(1, 0.008);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(0%, 0%) scale(1, 0.005);
+		opacity: 0;
+	}
+}

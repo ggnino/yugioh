@@ -1,0 +1,197 @@
+.deck-items {
+	position: relative;
+	display: flex;
+	height: 46rem;
+	width: 68rem;
+	justify-content: space-around;
+	align-items: stretch;
+	flex-flow: column;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	border-radius: 0.8rem;
+	scrollbar-color: navy transparent;
+	scrollbar-width: thin;
+	border: 6px transparent solid;
+	margin: 1rem;
+	background-color: navy;
+
+	// Deck items contiainer
+	&-container {
+		position: relative;
+		height: 48rem;
+		width: 70rem;
+		margin: 1rem;
+		border-radius: 6px;
+		overflow: hidden;
+		// Dummy divs for animations
+		.dummy {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 200%;
+			height: 150%;
+			background: linear-gradient(
+				200deg,
+				blue,
+				navy,
+				darkblue,
+				blue,
+				navy,
+				darkblue,
+				blue,
+				navy,
+				darkblue
+			);
+			background-size: 50% 100%;
+		}
+
+		.dummy2 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 200%;
+			height: 150%;
+			background: linear-gradient(
+				200deg,
+				gold,
+				gold,
+				#f2bb05,
+				#f2bb05,
+				blue,
+				navy,
+				darkblue,
+				gold,
+				gold,
+				#f2bb05,
+				#f2bb05,
+				blue,
+				navy,
+				darkblue,
+				gold,
+				gold,
+				#f2bb05,
+				#f2bb05,
+				blue,
+				navy,
+				darkblue,
+				gold
+			);
+			background-size: 50% 100%;
+			animation: gradient-animate 2s linear infinite;
+			transition: all 0.2s ease-in;
+		}
+	}
+
+	&:not(:last-child) {
+		margin-bottom: 5rem;
+	}
+
+	&:hover {
+		& > div:first-child {
+			h3 {
+				color: #f2bb05;
+			}
+		}
+	}
+	scrollbar-width: thin;
+	scrollbar-color: #f2bb05 transparent;
+
+	// Scrollbar for chrome
+	&::-webkit-scrollbar {
+		width: 1rem;
+		transition: all 0.2s;
+	}
+	&::-webkit-scrollbar-track {
+		color: gold;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #f2bb0591;
+		border: 3px solid navy;
+		border-radius: 1rem;
+
+		&:hover {
+			background-color: #f2bb05;
+		}
+	}
+	// Title element
+	&-title {
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+
+		h3 {
+			font-size: 3rem;
+			padding: 0.5rem;
+			margin: 1rem;
+		}
+	}
+
+	&-counter {
+		margin: 0.5rem;
+		padding: 0.5rem;
+		align-items: center;
+
+		display: flex;
+
+		img {
+			max-width: 5rem;
+			margin-right: 0.6rem;
+			border-radius: 0.5rem;
+		}
+
+		span {
+			font-size: 2rem;
+		}
+	}
+	// Deck cards
+	&-cards {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		flex-grow: 1;
+		width: 100%;
+		height: 10rem;
+
+		#deck {
+			width: 15rem;
+			margin-bottom: 0.5rem;
+			.card-btns {
+				width: 100%;
+				z-index: 50;
+				a {
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+	// Media queries
+	@media screen and (max-width: 768px) {
+		width: 45rem;
+
+		&-container {
+			width: 47rem;
+		}
+	}
+	@media screen and (max-width: 520px) {
+		width: 35rem;
+
+		&-container {
+			width: 37rem;
+		}
+	}
+	@media screen and (max-width: 420px) {
+		width: 23rem;
+
+		&-container {
+			width: 25rem;
+		}
+	}
+}
+// Animation
+@keyframes gradient-animate {
+	to {
+		transform: translateX(-50%);
+	}
+}

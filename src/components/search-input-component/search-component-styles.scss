@@ -1,0 +1,60 @@
+.deck-search-input {
+	display: flex;
+	position: relative;
+	justify-content: center;
+
+	input {
+		display: block;
+		margin: 2rem;
+		font-size: 6rem;
+		border-radius: 4rem;
+		background-color: navy;
+		border: 2px navy solid;
+		padding-right: 5rem;
+		color: inherit;
+		transition: all 1s;
+		position: relative;
+	}
+	input:focus,
+	input:focus-visible {
+		border: 2px #f2bb05 solid;
+		outline: none;
+	}
+	img {
+		width: 5rem;
+		position: absolute;
+		top: 3.4rem;
+		transition: all 1s;
+		cursor: pointer;
+		transform: scale(1);
+	}
+	// Media queries
+	@media screen and (max-width: 1700px) {
+		input {
+			font-size: 5rem;
+		}
+		img {
+			width: 4rem;
+		}
+	}
+	@media screen and (max-width: 1024px) {
+		input {
+			font-size: 4rem;
+		}
+		img {
+			width: 3rem;
+			right: 26rem;
+		}
+	}
+	@media screen and (max-width: 800px) {
+		margin-right: 0rem;
+		input {
+			font-size: 2rem;
+		}
+		img {
+			top: 2.4rem;
+			right: 17.8rem;
+			width: 2rem;
+		}
+	}
+}

@@ -1,0 +1,26 @@
+.deck-search-results {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: column;
+	align-items: center;
+	padding-top: 1rem;
+
+	&-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 2rem;
+		#searchCard {
+			width: 100%;
+		}
+	}
+	//Media query
+	@media screen and (max-width: 695px) {
+		&-container {
+			flex-wrap: wrap;
+			#searchCard {
+				width: 20rem;
+			}
+		}
+	}
+}
