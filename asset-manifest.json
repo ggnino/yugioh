@@ -1,24 +1,21 @@
 {
-  "files": {
-    "main.css": "/static/css/main.e3004f50.css",
-    "main.js": "/static/js/main.6e8d0f22.js",
-    "static/media/yugi-match1.mp4": "/static/media/yugi-match1.898aa99a2b45b3e92470.mp4",
-    "static/media/bg.png": "/static/media/bg.6d5104da1b29e9ab0d8c.png",
-    "static/media/dark-magician-card.png": "/static/media/dark-magician-card.c8a85c42590c9e231b05.png",
-    "static/media/nav-bg2.jpg": "/static/media/nav-bg2.f1951392f3c9e8313981.jpg",
-    "static/media/dark-magician-girl-card.jpg": "/static/media/dark-magician-girl-card.6872abc29b5e113a5ade.jpg",
-    "static/media/deck-builder.png": "/static/media/deck-builder.ee4ae92c769112649682.png",
-    "static/media/nav-icon.png": "/static/media/nav-icon.270df3e93fa8bbfa518c.png",
-    "static/media/cartoon-dark-magician-img.png": "/static/media/cartoon-dark-magician-img.dd2ae221cc349dd18b1b.png",
-    "static/media/kuriboh.png": "/static/media/kuriboh.cbd856439d7eae44201c.png",
-    "static/media/more-info.jpg": "/static/media/more-info.f15110bb823598bc0a38.jpg",
-    "static/media/card-back.jpg": "/static/media/card-back.7e3101b346e6ad3724c3.jpg",
-    "index.html": "/index.html",
-    "main.e3004f50.css.map": "/static/css/main.e3004f50.css.map",
-    "main.6e8d0f22.js.map": "/static/js/main.6e8d0f22.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.e3004f50.css",
-    "static/js/main.6e8d0f22.js"
-  ]
+	"files": {
+		"main.css": "./static/css/main.e3004f50.css",
+		"main.js": "./static/js/main.6e8d0f22.js",
+		"static/media/yugi-match1.mp4": "./static/media/yugi-match1.898aa99a2b45b3e92470.mp4",
+		"static/media/bg.png": "./static/media/bg.6d5104da1b29e9ab0d8c.png",
+		"static/media/dark-magician-card.png": "./static/media/dark-magician-card.c8a85c42590c9e231b05.png",
+		"static/media/nav-bg2.jpg": "./static/media/nav-bg2.f1951392f3c9e8313981.jpg",
+		"static/media/dark-magician-girl-card.jpg": "./static/media/dark-magician-girl-card.6872abc29b5e113a5ade.jpg",
+		"static/media/deck-builder.png": "./static/media/deck-builder.ee4ae92c769112649682.png",
+		"static/media/nav-icon.png": "./static/media/nav-icon.270df3e93fa8bbfa518c.png",
+		"static/media/cartoon-dark-magician-img.png": "./static/media/cartoon-dark-magician-img.dd2ae221cc349dd18b1b.png",
+		"static/media/kuriboh.png": "./static/media/kuriboh.cbd856439d7eae44201c.png",
+		"static/media/more-info.jpg": "./static/media/more-info.f15110bb823598bc0a38.jpg",
+		"static/media/card-back.jpg": "./static/media/card-back.7e3101b346e6ad3724c3.jpg",
+		"index.html": "./index.html",
+		"main.e3004f50.css.map": "./static/css/main.e3004f50.css.map",
+		"main.6e8d0f22.js.map": "./static/js/main.6e8d0f22.js.map"
+	},
+	"entrypoints": ["static/css/main.e3004f50.css", "static/js/main.6e8d0f22.js"]
 }
