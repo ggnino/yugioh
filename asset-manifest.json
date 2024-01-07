@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/yugioh/static/css/main.48b9f702.css",
-    "main.js": "/yugioh/static/js/main.27c2b306.js",
+    "main.css": "/yugioh/static/css/main.9e3b6f0d.css",
+    "main.js": "/yugioh/static/js/main.9199bf8c.js",
     "static/media/yugi-match1.mp4": "/yugioh/static/media/yugi-match1.898aa99a2b45b3e92470.mp4",
     "static/media/bg.png": "/yugioh/static/media/bg.6d5104da1b29e9ab0d8c.png",
     "static/media/dark-magician-card.png": "/yugioh/static/media/dark-magician-card.c8a85c42590c9e231b05.png",
@@ -14,11 +14,11 @@
     "static/media/more-info.jpg": "/yugioh/static/media/more-info.f15110bb823598bc0a38.jpg",
     "static/media/card-back.jpg": "/yugioh/static/media/card-back.7e3101b346e6ad3724c3.jpg",
     "index.html": "/yugioh/index.html",
-    "main.48b9f702.css.map": "/yugioh/static/css/main.48b9f702.css.map",
-    "main.27c2b306.js.map": "/yugioh/static/js/main.27c2b306.js.map"
+    "main.9e3b6f0d.css.map": "/yugioh/static/css/main.9e3b6f0d.css.map",
+    "main.9199bf8c.js.map": "/yugioh/static/js/main.9199bf8c.js.map"
   },
   "entrypoints": [
-    "static/css/main.48b9f702.css",
-    "static/js/main.27c2b306.js"
+    "static/css/main.9e3b6f0d.css",
+    "static/js/main.9199bf8c.js"
   ]
 }
