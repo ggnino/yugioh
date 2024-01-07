@@ -17,5 +17,8 @@
 		"main.e3004f50.css.map": "./static/css/main.e3004f50.css.map",
 		"main.6e8d0f22.js.map": "./static/js/main.6e8d0f22.js.map"
 	},
-	"entrypoints": ["static/css/main.e3004f50.css", "static/js/main.6e8d0f22.js"]
+	"entrypoints": [
+		"./static/css/main.e3004f50.css",
+		"./static/js/main.6e8d0f22.js"
+	]
 }
